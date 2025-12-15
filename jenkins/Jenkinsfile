@@ -21,6 +21,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Verify') {
+            steps {
+                echo 'TODO: Add verification steps here'
+            }
+        }
         stage('Complete') {
             steps {
                 echo 'Job Complete!'
